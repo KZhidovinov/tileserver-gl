@@ -1,5 +1,5 @@
 {
-  "name": "tileserver-gl",
+  "name": "tileserver-gl-light",
   "version": "3.0.0",
   "description": "Map tile server for JSON GL styles - vector and server side generated raster tiles",
   "main": "src/main.js",
@@ -18,12 +18,10 @@
     "docker": "docker build -f Dockerfile . && docker run --rm -i -p 8080:80 $(docker build -q .)"
   },
   "dependencies": {
-    "@mapbox/mapbox-gl-native": "5.0.2",
     "@mapbox/mbtiles": "0.11.0",
     "@mapbox/sphericalmercator": "1.1.0",
     "@mapbox/vector-tile": "1.3.1",
     "advanced-pool": "0.3.3",
-    "canvas": "2.6.1",
     "clone": "2.1.2",
     "color": "3.1.2",
     "commander": "4.0.1",
@@ -36,7 +34,6 @@
     "pbf": "3.2.1",
     "proj4": "2.6.0",
     "request": "2.88.0",
-    "sharp": "0.23.4",
     "tileserver-gl-styles": "2.0.0"
   },
   "devDependencies": {
