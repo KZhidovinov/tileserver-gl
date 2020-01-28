@@ -13,6 +13,7 @@
     "node": ">=10 <11"
   },
   "scripts": {
+    "start": "node src/main.js --config data/config.json --port $PORT",
     "test": "mocha test/**.js --timeout 10000",
     "docker": "docker build -f Dockerfile . && docker run --rm -i -p 8080:80 $(docker build -q .)"
   },
