@@ -1,0 +1,61 @@
+{
+    "options": {
+        "paths": {
+            "root": "/data",
+            "fonts": "fonts",
+            "styles": "styles",
+            "mbtiles": "mbtiles"
+        }
+    },
+    "styles": {
+        "klokantech-basic": {
+            "style": "klokantech-basic/style.json",
+            "tilejson": {
+                "bounds": [
+                    29.118,
+                    59.5652,
+                    31.528,
+                    60.3073
+                ]
+            }
+        },
+        "klokantech-basic-3d": {
+            "style": "klokantech-basic-3d/style.json",
+            "tilejson": {
+                "bounds": [
+                    29.118,
+                    59.5652,
+                    31.528,
+                    60.3073
+                ]
+            }
+        },
+        "klokantech-basic-ru": {
+            "style": "klokantech-basic-ru/style.json",
+            "tilejson": {
+                "bounds": [
+                    29.118,
+                    59.5652,
+                    31.528,
+                    60.3073
+                ]
+            }
+        },
+        "klokantech-basic-ru-3d": {
+            "style": "klokantech-basic-ru-3d/style.json",
+            "tilejson": {
+                "bounds": [
+                    29.118,
+                    59.5652,
+                    31.528,
+                    60.3073
+                ]
+            }
+        }
+    },
+    "data": {
+        "v3": {
+            "mbtiles": "tiles.mbtiles"
+        }
+    }
+}
