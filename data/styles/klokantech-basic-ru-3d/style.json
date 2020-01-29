@@ -122,10 +122,20 @@
       }
     },
     {
+      "id": "bridge",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "filter": ["all", ["==", "$type", "Polygon"], ["==", "class", "bridge"]],
+      "paint": {"fill-color": "hsl(47, 26%, 88%)"}
+    },
+    {
       "id": "waterway",
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "waterway",
+      "minzoom": 5,
+      "maxzoom": 12,
       "filter": ["==", "$type", "LineString"],
       "paint": {
         "line-color": "hsl(205, 56%, 73%)",
@@ -507,6 +517,7 @@
       "type": "fill-extrusion",
       "source": "openmaptiles",
       "source-layer": "building",
+      "minzoom": 16,
       "filter": [
         "all",
         [
@@ -543,11 +554,11 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 5,
+      "minzoom": 16,
       "filter": [
         "all",
         ["==", "$type", "Point"],
-        ["==", "rank", 1],
+        ["<=", "rank", 10],
         ["has", "name:ru"]
       ],
       "layout": {
@@ -572,11 +583,11 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 5,
+      "minzoom": 16,
       "filter": [
         "all",
         ["==", "$type", "Point"],
-        ["==", "rank", 1],
+        ["<=", "rank", 10],
         ["has", "name_ru"]
       ],
       "layout": {
@@ -601,11 +612,11 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 5,
+      "minzoom": 16,
       "filter": [
         "all",
         ["==", "$type", "Point"],
-        ["==", "rank", 1],
+        ["<=", "rank", 10],
         ["!has", "name:ru"],
         ["!has", "name_ru"]
       ],
